@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display&display=swap:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Noto+Serif&family=Playfair+Display:ital,wght@0,500;1,500&display=swap:500,600,700,800,900');
 
 /* ---------------------------------------Heading */
 
@@ -8,26 +8,43 @@
     border: 0;
 }
 
+h1,h2,h3,h4 {
+    font-weight: 700;
+}
+
 header {
-    background-color: #fff;
+    background-color: rgba(211, 211, 211, 0.8);
 }
 
 #header-area {
     background-image: url('../images/baking.jpg');
+    height: 150px;
     text-align: center;
-    font-family: ;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-area a h1 {
+    color: #606160;
+    font-family: Italianno, sans-serif;
+    font-size: 100px;
+}
+
+#header-area a h1:hover {
+    border-bottom: 0;
 }
 
 body {
     font-family: 'Playfair Display', sans-serif;
     font-weight: 500;
-    color: #a3a0a0;
+    color: #606160;
 }
 
 #logo {
     float: left;
-    font-size: 300%;
-    color: #a3a0a0;
+    font-size: 150%;
+    color: #606160;
     margin-left: 30px;
 }
 
@@ -60,43 +77,104 @@ body {
     border-bottom: 1px solid #a3a0a0;
 }
 
-/* #about-us-backgound {
-    height: 100vh;
+#about-us-backgound {
+    height: 100%;
     width: 100%;
-    background-image: url('../images/cake-bg-image.jpg');
+    /* background-image: url('../images/cake-bg-image.jpg'); */
+    background-image: url('../images/cake-bg-image2.jpg');
     background-size: cover;
-} */
+}
 
-/* #image-container {
-    height:1600px;
+#image-container {
+    height:1000px;
     width: 100%;
     overflow: hidden;
     position: relative;
-} */
+}
 
 #about-us-text {
-	background-color: rgba(211, 211, 211, 0.6);
-    color: #fffff0;
+	background-color: rgba(211, 211, 211, 0.8);
+    color: #000;
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
     position: relative;
     padding: 20px;
-    right: 70px;
-    top: -15px;
+}
+
+#about-us-text h2 {
+    color: inherit;
+    border-bottom: 1px solid;
+}
+
+#about-us-text p {
+    padding: 10px;
+}
+
+#about-us-text a {
+    color: inherit;
+    border-bottom: 1px solid;
 }
 
 .about-us-area {
-    float: right;
-	width: 50%;
-	margin: 200px 35px 0 0;
-	display: inline-block;
+    float: left;
+	width: 40%;
+	margin: 200px 0 0 35px;
 }
 
-.social-links li {
-    display: inline;
+/* ---------------------------------------Footer */
+
+.footer-area {
+    height: 70px;
+    background-color: rgba(211, 211, 211, 0.8);
+    padding: 10px 0;
+    margin-bottom: 0;
 }
 
-h1,h2,h3,h4 {
-    font-weight: 700;
+.where-to-find-us {
+    text-transform: uppercase;
+    color: inherit;
+    float: left;
+    padding: 10px 0 0 50px;
 }
+
+.social-links {
+    /* height: 20%; */
+    text-align: center;
+    padding-top: 12px;
+   
+}
+
+.social-links li a i {
+    height: 75px;
+    color: #606160;
+    font-size: 26px;
+    font-family: 'Noto Serif', sans-serif;
+}
+
+.social-links li a span {
+    color: #606160;
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+}
+
+#facebook i {
+    color: #3b5998;
+}
+
+#twitter i {
+    color:#1DA1F2;
+}
+
+#instagram i {
+    color: #833AB4;
+}
+
+#pinterest i {
+    color: #E60023;
+}
+
+
 
 
 
@@ -106,9 +184,12 @@ h1,h2,h3,h4 {
 @media screen and (max-width: 768px ) {
     #about-us-text {
         color: black;
+        padding: 20px;
     }
 
     .about-us-area {
-        width: 90%;
+        width: 80%;
+        float: none;
+        margin: 0 10% 0 10%;  
     }
 }
