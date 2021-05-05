@@ -80,7 +80,6 @@ body {
 #about-us-backgound {
     height: 100%;
     width: 100%;
-    /* background-image: url('../images/cake-bg-image.jpg'); */
     background-image: url('../images/cake-bg-image2.jpg');
     background-size: cover;
 }
@@ -125,37 +124,52 @@ body {
 /* ---------------------------------------Footer */
 
 .footer-area {
-    height: 70px;
     background-color: rgba(211, 211, 211, 0.8);
     padding: 10px 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .where-to-find-us {
     text-transform: uppercase;
     color: inherit;
+    width: 100%;
     float: left;
-    padding: 10px 0 0 50px;
+    padding: 10px 0 0 10px;
 }
 
 .social-links {
-    /* height: 20%; */
     text-align: center;
-    padding-top: 12px;
-   
+    padding-top: 20px;
+}
+
+.social-area li {
+    width: 20%;
+    padding: 0;
+    margin: 0;
 }
 
 .social-links li a i {
-    height: 75px;
+    height: 30px;
     color: #606160;
     font-size: 26px;
     font-family: 'Noto Serif', sans-serif;
+    text-align: center;
 }
 
 .social-links li a span {
     color: #606160;
     font-size: 20px;
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+
+.social-item {
+    margin: 0;
+    padding: 0;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
 }
 
 #facebook i {
@@ -181,6 +195,12 @@ body {
 
 /* ---------------------------------------Media Queries */
 
+@media screen and (max-width: 992px ) {
+    .social-area li {
+        width: 20%;
+    }
+}
+
 @media screen and (max-width: 768px ) {
     #about-us-text {
         color: black;
@@ -190,6 +210,22 @@ body {
     .about-us-area {
         width: 80%;
         float: none;
-        margin: 0 10% 0 10%;  
+        margin: 20% 10% 0 10%;  
+    }
+
+    .social-area li {
+        width: 45%;
+}
+
+@media screen and (max-width: 576px ) {
+    .social-area li {
+        width: 60%;
+        text-align: left;
+    }
+
+    .about-us-area {
+        width: 80%;
+        float: none;
+        margin: 20% 10% 0 10%;  
     }
 }
