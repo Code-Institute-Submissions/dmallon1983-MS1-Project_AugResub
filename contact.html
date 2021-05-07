@@ -19,32 +19,32 @@
 
 <body>
     <header>
-        <div class="row header-area">
+        <div class="row no-gutters header-area">
             <div class="col">
-            <a href="index.html">
-                <h1><em>CM Baking</em></h1>
-            </a>
+                <a href="index.html">
+                    <h1><em>CM Baking</em></h1>
+                </a>
+            </div>
         </div>
-        </div>
-        <div class="row">
-            <a href="index.htm" class="col-md-4">
+        <div class="row no-gutters nav-area">
+            <a href="index.html" class="col-md-4">
                 <h2 id="logo">Cakes and Baking For Every Occasion</h2>
             </a>
             <div class="col-md-8">
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
                             <li class="col-6 col-sm-3 list-inline-item">
-                                <a href="index.html" class="active"><span><strong>Home</strong></span></a>
+                                <a href="index.html"><span><strong>Home</strong></span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item">
-                                <a href="gallery.html"><span><strong>Cakes!</strong></span></a>
+                                <a href="gallery.html"><span><strong>Cakes</strong></span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item">
-                                <a href="contact.html"><span><strong>Contact</strong></span></a>
+                                <a href="contact.html" class="active"><span><strong>Contact</strong></span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item">
-                                <a href="recipe.html"><span><strong>Bake!</strong></span></a>
+                                <a href="recipe.html"><span><strong>Bake</strong></span></a>
                             </li>
                         </ul>
                     </div>
@@ -53,27 +53,33 @@
         </div>
     </header>
     
-    <section class="contact-area">
+    <section class="contact-area bg-color">
         <div class="contact-text">
-        <h2>Get in touch!!!</h2>
+        <h2>Get in touch</h2>
         <p>We'd love to hear form you and we'll do our best to make sure we deliver exactly what you need to make your
             day as special as you hope. Why not let us know what you need in the form below and we'll reply as soon as
             possible to work with you to match your baking needs:</p>
         </div>
     </section>
-    <section class="contact-form">
+    <section class="contact-form bg-color">
         <form action="https://formdump.codeinstitute.net/" method="POST" class="signup-form">
             <h3>How can we help?</h3>
-            <label for="name">Name</label>
+            <label for="name">Name:</label>
             <input id="name" type="text" name="name" required class="text-input">
-            <label for="email">Email Address</label>
-            <input id="email" type="email" name="email_address" required class="text-input">
-            <label for="road">Wedding Cake</label>
-            <input id="road" type="radio" name="request_type" value="wedding" required>
-            <label for="trail">Celebration Cake</label>
-            <input id="trail" type="radio" name="request_type" value="celebration">
-            <label for="both">Home Baking/Afternoon Tea</label>
-            <input id="both" type="radio" name="request_type" value="baking">
+            <label for="email">Email Address:</label>
+            <input id="email" type="email" name="email_address" required class="text-input" placeholder="yourname@email">
+            <div>
+                <label for="road">Wedding Cake</label>
+                <input id="road" type="radio" name="request_type" value="wedding" required>
+            </div>
+            <div>
+                <label for="trail">Celebration Cake</label>
+                <input id="trail" type="radio" name="request_type" value="celebration">
+            </div>
+            <div>
+                <label for="both">Home Baking/Afternoon Tea</label>
+                <input id="both" type="radio" name="request_type" value="baking">
+            </div>
             <label for="contact-text">Get in touch...</label>
             <textarea id="contact-text" cols="30" rows="10" name="contact_us" placeholder="Let us know here how we can help..."></textarea>
             <input type="submit" value="Send" class="btn btn-success">

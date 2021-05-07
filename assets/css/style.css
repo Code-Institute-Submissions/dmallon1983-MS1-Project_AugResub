@@ -5,10 +5,13 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;   
+    border: 0;
 }
 
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 700;
 }
 
@@ -19,16 +22,20 @@ header {
 .header-area {
     background-image: url('../images/baking.jpg');
     height: 150px;
-    text-align: center;   
+    text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.header-area a {
+    text-decoration: none;
 }
 
 .header-area a h1 {
     color: #5d0000;
     font-family: Italianno, sans-serif;
     font-size: 100px;
-    
+
 }
 
 
@@ -42,38 +49,28 @@ body {
     padding: 20px;
 }
 
+.nav-area a {
+    text-decoration: none;
+}
+
 #logo {
-    /* float: left; */
     font-size: 150%;
     color: #606160;
     margin-left: 10px;
-    /* padding-top: 20px; */
-    
-}
 
-#nav {
-    /* list-style-type: none;
-    letter-spacing: 2px;
-    padding-top: 8px; */
 }
 
 #nav li {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     padding: 5px 0 5px 0;
 }
 
-/* #logo, #nav {
-    height: 50px;
-    line-height: 100%;
-} */
-
 
 #nav a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
     letter-spacing: 2px;
-    /* display: block; */
 }
 
 #nav a:hover {
@@ -94,11 +91,6 @@ body {
 }
 
 
-/* .list-inline-item {
-    padding: 0;
-    margin: 0;
-} */
-
 /* --------------------------------------- Home Sections */
 
 .page-backgound {
@@ -110,12 +102,8 @@ body {
     background-position: center center;
 }
 
-.about-us {
-    background-color: #fffff9;
-}
-
 #about-us-text {
-	background-color: rgba(211, 211, 211, 0.8);
+    background-color: rgba(211, 211, 211, 0.8);
     color: #000;
     font-family: 'Noto Serif', sans-serif;
     font-size: 22px;
@@ -140,8 +128,8 @@ body {
 
 .about-us-area {
     float: left;
-	width: 40%;
-	margin: 100px 0 100px 35px;
+    width: 40%;
+    margin: 100px 0 100px 35px;
 }
 
 .media img {
@@ -155,13 +143,17 @@ body {
     display: block;
     width: 60%;
 }
+
 .testimonials {
     padding: 20px;
-    background-color: #fffff9;
 }
 
 .testimonial blockquote {
     padding: 20px;
+}
+
+.testimonials p {
+    font-weight: 600;
 }
 
 /* --------------------------------------- Gallery Sections */
@@ -169,9 +161,7 @@ body {
 
 
 .gallery-heading {
-    padding: 20px;
-    width: 60%;
-    background-color: #FFFFF9;
+    padding: 10px 40% 10px 10px;
 }
 
 .gallery-heading a {
@@ -179,45 +169,47 @@ body {
     border-bottom: 1px solid;
 }
 
-.gallery-container {
-    padding: 50px 0 50px 20px;
-    background-color: #FFFFF9;
+.gallery-heading p {
+    margin-top: 1rem;
 }
 
-.gallery-items {
-    
+
+.gallery-container {
+    padding: 20px 0 20px 20px;
 }
-    
+
+
 
 .gallery-items img {
     border: 2px solid #C0C0C0;
     padding: 5px;
-  }
+}
 
 .gallery-items img:hover {
     box-shadow: 5px 4px 10px #606160;
-  }
+}
 
 #video {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
-    background-color: #FFFFF9;
-  }
-
-  /* --------------------------------------- Contact */
-
-.contact-area,.contact-text {
-    background-color: #fffff9;
 }
 
-  .contact-text {
-    padding: 20px;
+/* --------------------------------------- Contact */
+
+.contact-text {
     width: 50%;
+    padding: 20px;
+    margin: 0 25%;
+}
+
+.contact-form {
+    padding: 20px 25%;
 }
 
 .text-input {
+    font-family: 'Noto Serif', sans-serif;
     color: #fafafa;
     width: 100%;
     height: 25px;
@@ -226,20 +218,19 @@ body {
     border-radius: 2px;
 }
 
-    .signup-form {
-        margin: 20px 0 20px 0;
-        color: #fff;
-        background-color: rgba(60, 60, 60, 0.6);
-        max-width: 600px;
-        position: relative;
-        left: 10%;
-        padding: 30px;
-    }
+.signup-form {
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    min-width: 50%;
+    
+    
+    padding: 30px;
+}
 
-    .signup-form h2 {
-        color: #fafafa;
-        margin-bottom: 20px;
-    }
+.signup-form h3 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
 
 /* ---------------------------------------Footer */
 
@@ -268,6 +259,10 @@ body {
     margin: 0;
 }
 
+.social-area li a {
+    text-decoration: none;
+}
+
 .social-links li a i {
     height: 30px;
     color: #606160;
@@ -294,7 +289,7 @@ body {
 }
 
 #twitter i {
-    color:#1DA1F2;
+    color: #1DA1F2;
 }
 
 #instagram i {
@@ -305,20 +300,22 @@ body {
     color: #E60023;
 }
 
-
+.bg-color {
+    background-color: #fffff9;
+}
 
 
 
 
 /* ---------------------------------------Media Queries */
 
-@media screen and (max-width: 992px ) {
+@media screen and (max-width: 992px) {
 
     #logo {
         text-align: center;
-        
+
     }
-    
+
     #menu {
         font-size: 110%;
         list-style-type: none;
@@ -326,14 +323,15 @@ body {
         /* float: right; */
         padding-top: 8px;
     }
-    
-    /* #logo, #menu {
-        line-height: 75px;
-    } */
-    
+
     #menu li {
         text-align: center;
         margin-right: 15px;
+    }
+
+    .about-us-area {
+        width: 60%;
+        padding: 20% 10% 20% 10%;
     }
 
     .social-area li {
@@ -341,7 +339,7 @@ body {
     }
 }
 
-@media screen and (max-width: 768px ) {
+@media screen and (max-width: 768px) {
 
     #logo {
         padding-top: 20px;
@@ -352,31 +350,77 @@ body {
         padding: 20px;
     }
 
-    .about-us-area,.testimonials {
-        width: 100%;
-        float: none;
-        margin: 20% 10% 20% 10%;  
+    .about-us-area {
+        width: 80%;
+        padding: 20% 10% 20% 10%;
     }
 
-    
+    .testimonials {
+        margin: 0;
+    }
+
+    .testimonial {
+        padding-left: 5%;
+        margin: 0;
+    }
+
+    .blockquote {
+        width: 100%;
+    }
 
     .social-area li {
         width: 45%;
+    }
+
+    .contact-text {
+        width: 70%;
+        padding: 20px;
+        margin: 0 15%;
+    }
+
+    .contact-form {
+    padding: 20px 5%;
+}
+    .signup-form {
+        width: 80%;
+    }
 }
 
-@media screen and (max-width: 576px ) {
+
+
+@media screen and (max-width: 576px) {
     .social-area li {
-        width: 60%;
         text-align: center;
-        
+
     }
+
     .social-links li a span {
         display: none;
     }
 
     .about-us-area {
         width: 80%;
-        float: none;
-        margin: 20% 10% 0 10%;  
+        padding: 20% 10% 20% 10%;
+        margin: 10%;
+    }
+
+    .gallery-items {
+        text-align: center;
+    }
+
+    .gallery-container h3 {
+        text-align: center;
+    }
+
+    .gallery-heading {
+        padding: 10px;
+    }
+
+    .gallery-heading h2 {
+        text-align: center;
+    }
+
+    .contact-text {
+        width: 100%;
     }
 }

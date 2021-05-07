@@ -32,7 +32,7 @@ This is my submission for MS1 in the Code Institute Full Stack Developer diploma
         #### Colour Scheme and Site Theme
         -   The site was designed using nuetral (greys) and traditional wedding themed colours (white/ivory) to maintain the professional theme of the site.
         #### Typography
-        -   The Playfair Display font was imported from Google Fonts for use throughout the site with sans-serif used as a fallback font. Playfair Display was chosen for it's style as it was in keeping with the design and feel of the site.
+        -   The Playfair Display font was imported from Google Fonts for use throughout the site with sans-serif used as a fallback font. Playfair Display was chosen for it's style as it was in keeping with the design and feel of the site. Noto Serif was used in the form in the 'Contact' page as it is a similar font but with a bolder style.
         #### Imagery
         -   The various images built into the site have been chosed and styled to grab the attention of the user while still remaining subtle enough to provide a good UX.
 
@@ -202,4 +202,4 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   Code Institute for the fantastic course material and media
 
--   Slack community for support throughout the whol project.
+-   Slack community for support throughout the whole project.
