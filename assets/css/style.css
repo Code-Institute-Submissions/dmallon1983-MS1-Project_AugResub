@@ -38,6 +38,10 @@ body {
     color: #606160;
 }
 
+.nav-area {
+    padding: 20px;
+}
+
 #logo {
     /* float: left; */
     font-size: 150%;
