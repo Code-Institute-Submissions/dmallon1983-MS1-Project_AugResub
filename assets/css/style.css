@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 0;   
 }
 
 h1,h2,h3,h4 {
@@ -16,17 +16,16 @@ header {
     background-color: rgba(211, 211, 211, 0.8);
 }
 
-#header-area {
+.header-area {
     background-image: url('../images/baking.jpg');
     height: 150px;
-    text-align: center;
-    
+    text-align: center;   
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#header-area a h1 {
-    color: #606160;
+.header-area a h1 {
+    color: #5d0000;
     font-family: Italianno, sans-serif;
     font-size: 100px;
     
@@ -41,7 +40,7 @@ body {
 
 #logo {
     /* float: left; */
-    font-size: 120%;
+    font-size: 150%;
     color: #606160;
     margin-left: 10px;
     /* padding-top: 20px; */
@@ -56,14 +55,14 @@ body {
 
 #nav li {
     font-size: 16px;
-    padding-top: 20px;
     text-align: center;
+    padding: 5px 0 5px 0;
 }
 
-#logo, #nav {
+/* #logo, #nav {
     height: 50px;
     line-height: 100%;
-}
+} */
 
 
 #nav a {
@@ -86,6 +85,11 @@ body {
     margin-bottom: 0;
 }
 
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+
 /* .list-inline-item {
     padding: 0;
     margin: 0;
@@ -93,18 +97,17 @@ body {
 
 /* --------------------------------------- Home Sections */
 
-#page-backgound {
+.page-backgound {
     height: 100%;
     width: 100%;
     background-image: url('../images/cake-bg-image2.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
-#image-container {
-    height:1000px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+.about-us {
+    background-color: #fffff9;
 }
 
 #about-us-text {
@@ -134,7 +137,7 @@ body {
 .about-us-area {
     float: left;
 	width: 40%;
-	margin: 200px 0 0 35px;
+	margin: 100px 0 100px 35px;
 }
 
 .media img {
@@ -150,6 +153,7 @@ body {
 }
 .testimonials {
     padding: 20px;
+    background-color: #fffff9;
 }
 
 .testimonial blockquote {
@@ -163,6 +167,7 @@ body {
 .gallery-heading {
     padding: 20px;
     width: 60%;
+    background-color: #FFFFF9;
 }
 
 .gallery-heading a {
@@ -172,6 +177,7 @@ body {
 
 .gallery-container {
     padding: 50px 0 50px 20px;
+    background-color: #FFFFF9;
 }
 
 .gallery-items {
@@ -193,11 +199,16 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
+    background-color: #FFFFF9;
   }
 
   /* --------------------------------------- Contact */
 
-.contact-text {
+.contact-area,.contact-text {
+    background-color: #fffff9;
+}
+
+  .contact-text {
     padding: 20px;
     width: 50%;
 }
@@ -268,14 +279,11 @@ body {
     text-align: center;
 }
 
-.social-item {
+/* .social-item {
     margin: 0;
     padding: 0;
-}
+} */
 
-.list-inline-item:not(:last-child) {
-    margin: 0;
-}
 
 #facebook i {
     color: #3b5998;
@@ -340,11 +348,13 @@ body {
         padding: 20px;
     }
 
-    .about-us-area {
-        width: 80%;
+    .about-us-area,.testimonials {
+        width: 100%;
         float: none;
-        margin: 20% 10% 0 10%;  
+        margin: 20% 10% 20% 10%;  
     }
+
+    
 
     .social-area li {
         width: 45%;
