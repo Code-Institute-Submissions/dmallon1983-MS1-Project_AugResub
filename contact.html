@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b053ee9d06.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>CM Baking - Cakes and Baking For Every Occasion</title>
@@ -32,17 +29,14 @@
                 <div class="row no-gutters">
                     <div class="col">
                         <ul id="nav" class="list-inline menucontainer">
-                            <li class="col-6 col-sm-3 list-inline-item">
+                            <li class="col-4 list-inline-item">
                                 <a href="index.html"><span><strong>Home</strong></span></a>
                             </li>
-                            <li class="col-6 col-sm-3 list-inline-item">
+                            <li class="col-4 list-inline-item">
                                 <a href="gallery.html"><span><strong>Cakes</strong></span></a>
                             </li>
-                            <li class="col-6 col-sm-3 list-inline-item">
+                            <li class="col-4 list-inline-item">
                                 <a href="contact.html" class="active"><span><strong>Contact</strong></span></a>
-                            </li>
-                            <li class="col-6 col-sm-3 list-inline-item">
-                                <a href="recipe.html"><span><strong>Bake</strong></span></a>
                             </li>
                         </ul>
                     </div>
@@ -50,13 +44,15 @@
             </div>
         </div>
     </header>
-    
+
     <section class="contact-area bg-color">
         <div class="contact-text">
-        <h2>Get in touch</h2>
-        <p>We'd love to hear form you and we'll do our best to make sure we deliver exactly what you need to make your
-            day as special as you hope. Why not let us know what you need in the form below and we'll reply as soon as
-            possible to work with you to match your baking needs:</p>
+            <h2>Get in touch</h2>
+            <p>We'd love to hear form you and we'll do our best to make sure we deliver exactly what you need to make
+                your
+                day as special as you hope. Why not let us know what you need in the form below and we'll reply as soon
+                as
+                possible to work with you to match your baking needs:</p>
         </div>
     </section>
     <section class="contact-form bg-color">
@@ -65,23 +61,29 @@
             <label for="name">Name:</label>
             <input id="name" type="text" name="name" required class="text-input">
             <label for="email">Email Address:</label>
-            <input id="email" type="email" name="email_address" required class="text-input" placeholder="yourname@email">
-            <div>
-                <label for="road">Wedding Cake</label>
-                <input id="road" type="radio" name="request_type" value="wedding" required>
-            </div>
-            <div>
-                <label for="trail">Celebration Cake</label>
-                <input id="trail" type="radio" name="request_type" value="celebration">
-            </div>
-            <div>
-                <label for="both">Home Baking/Afternoon Tea</label>
-                <input id="both" type="radio" name="request_type" value="baking">
+            <input id="email" type="email" name="email_address" required class="text-input"
+                placeholder="yourname@email">
+            <div class="radio-section">
+                <div class="radio-btn">
+                    <label for="road">Wedding Cake</label>
+                    <input id="road" type="radio" name="request_type" value="wedding" required>
+                </div>
+                <div class="radio-btn">
+                    <label for="trail">Celebration Cake</label>
+                    <input id="trail" type="radio" name="request_type" value="celebration">
+                </div>
+                <div class="radio-btn">
+                    <label for="both">Home Baking/Afternoon Tea</label>
+                    <input id="both" type="radio" name="request_type" value="baking">
+                </div>
             </div>
 
-        <!-- I had to override the textarea column value with a max-width value in the CSS file to make the textarea responsive -->
-            <label for="contact-text-area">Get in touch...</label>
-            <textarea id="contact-text-area" cols="100" rows="10" name="contact_us" placeholder="Let us know here how we can help..."></textarea>
+            <!-- I had to override the textarea column value with a max-width value in the CSS file to make the textarea responsive -->
+            <label for="contact-text-area">
+                <h4>Get in touch...</h4>
+            </label>
+            <textarea id="contact-text-area" cols="100" rows="10" name="contact_us"
+                placeholder="Let us know here how we can help..."></textarea>
             <input class="btn btn-primary" type="submit" value="Submit">
         </form>
     </section>
