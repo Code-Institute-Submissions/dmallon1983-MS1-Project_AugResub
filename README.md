@@ -4,7 +4,9 @@
 
 This is my submission for MS1 in the Code Institute Full Stack Developer diploma. This website is for a local baking company looking to grow thier business by developing their online profile. This website was built with using the 'mobile first' principle and is fully responsive across all devices.
 
-<h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
+<h2 align="center"><img src="https://i.imgur.com/8IRxlLW.jpg"></h2>
+<h2 align="center"><img src="https://i.imgur.com/aEItrxf.jpg"></h2>
+<h2 align="center"><img src="https://i.imgur.com/gRE0YeA.jpg"></h2>
 
 ## User Experience (UX)
 
@@ -38,12 +40,19 @@ This is my submission for MS1 in the Code Institute Full Stack Developer diploma
 
 -   ### Wireframes
 
+    -   Wireframes in paper format due to local issue with Balsamiq
+
+    -   Home Page Wireframe - [View](https://i.imgur.com/pMkv3Ct.jpg)
+
+    -   Cakes Page Wireframe - [View](https://i.imgur.com/CkHb8hG.jpg)
+
+    -   Contact Page Wireframe - [View](https://i.imgur.com/fCay2Sz.jpg)
 
 
 ## Features
 
 -   Site contains several active links designed to allow the user to easily navigate through the site. 
--   All images in the 'Cakes' page are styled in thumbnail style with a border showing when hover is active. All images are wrapped in an <a> tag which will open the image in a new tab to allow the user to view an enlarged image.
+-   All images in the 'Cakes' page are styled in thumbnail style with a border showing when hover is active. All images are wrapped in an anchor tag which will open the image in a new tab to allow the user to view an enlarged image.
 -   Site was built with using the 'mobile first' principle and is fully responsive across all devices.
 
 ## Languages Used
@@ -55,8 +64,6 @@ This is my submission for MS1 in the Code Institute Full Stack Developer diploma
 
 1. [Bootstrap 5.0.0:](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
     - Bootstrap was used to assist with the responsiveness and styling of the website.
-1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
 1. [Font Awesome:](https://fontawesome.com/)
@@ -70,8 +77,8 @@ This is my submission for MS1 in the Code Institute Full Stack Developer diploma
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   HTML: All pages successfully tested using W3C HTML Validator with no errors
+-   CSS: All pages successfully tested using W3C CSS Validator with no errors
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -94,7 +101,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         4. As a visitor, I want to view previous work by the company to get a visual representation of their work.
 
         -   The 'Cakes' page contains several images of products available to the customers.
-        -   All images in the 'Cakes' page are styled in thumbnail style with a border showing when hover is active. All images are wrapped in an <a> tag which will open the image in a new tab to allow the user to view an enlarged image.
+        -   All images in the 'Cakes' page are styled in thumbnail style with a border showing when hover is active. All images are wrapped in an anchor tag which will open the image in a new tab to allow the user to view an enlarged image.
 
         5. As a visitor, I want to be able to view the company's online profile on social media platforms to view their previous work.
 
@@ -125,9 +132,35 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 -   The website was tested on Google Chrome, Microsoft Edge, Firefox, Safari (mobile) and Samsung Internet (mobile).
 -   Testing was performed on a range of devices (laptop, tablet, phone) to verify succeful deployment.
-- Testing completed by family members to review site and notify of any bugs/improvements to be made.
+-   Testing completed by family members to review site and notify of any bugs/improvements to be made.
 
-### Known Bugs
+#### Testing Specifics
+
+1. All navigation links across all 3 pages were tested and found to be working. 
+2. Any anchor links tested to ensure they open in new tab - successful.
+3. Responsive testing done using Chrome Developer tools. Site shown to be working correctly.
+4. User testing done by family. Grammatical errors and improvements completed.
+5. User stories put to test using family members. Answers satisfactory.
+6. Form on Contact page completed and Code Institute success message received.  
+
+### Bugs
+
+#### Fixed Bugs
+
+1. Installing Bootstrap 5.0.0 issues
+    - After installing Bootstrap 5.0.0. any anchor tags inherited a text-decoration border. All anchor tags containing text had to be targeted and the text-decroation set to none.
+2. Input Form on Contact Page
+    - The relative positioning of the Input form as causing responsive design issues so code adjusted to position table as a min-width with all round equal padding.
+    - The text area col value was causing issues when moving to smaller screens. I had to override the textarea column value with a max-width value in the CSS file to make the textarea responsive
+3. Footer Social Media links
+    - I could not get these to behave in the Grid system as the 4th link would overflow onto the line below. I removed the letter spacing from the text which solved this issue.
+
+
+#### Known Bugs
+
+1. Firefox Desktop and Mobile Browser
+    - The font family and weight seem to fall over on Firefox desktop and mobile.
+    - The Social Media links in the footer are moved into a white margin in the footer and overlap each other.
 
 ## Deployment
 
@@ -137,11 +170,10 @@ The project was deployed to GitHub Pages using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+3. In the side bar,click on the Pages nav button.
+4. Under "Source", click the dropdown called "None" and select "Master" and ensure folder is set to "Root"
+5. Click Save and new page will open.
+6. The published site is shown in the blue text bar [link](https://dmallon1983.github.io/MS1-Project/) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
@@ -187,9 +219,11 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content
 
--   All content written by developer
+-   Majority of content written by developer with external sources credited in comments on files.
 
 -   README.md file created by formatting Code Institute example and ammending and expanding to suit project
+
+-   Forking and cloning process taken from this example as not covered to date in the course.
 
 ### Media
 

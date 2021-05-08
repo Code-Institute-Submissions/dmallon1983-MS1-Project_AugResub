@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Noto+Serif&family=Playfair+Display:ital,wght@0,500;1,500&display=swap:500,600,700,800,900');
 
-/* ---------------------------------------Heading */
+/* ---------------------------------------General */
 
 * {
     margin: 0;
@@ -14,6 +14,8 @@ h3,
 h4 {
     font-weight: 700;
 }
+
+/* ---------------------------------------Header */
 
 header {
     background-color: rgba(211, 211, 211, 0.8);
@@ -178,7 +180,7 @@ body {
     padding: 20px 0 20px 20px;
 }
 
-
+/* credit: code to show thumnails and border shadow from https://www.w3docs.com/snippets/css/how-to-create-thumbnail-images.html ammended to fit with site colour theme */
 
 .gallery-items img {
     border: 2px solid #C0C0C0;
@@ -202,6 +204,8 @@ body {
 .contact-form {
     padding: 20px 25%;
 }
+
+/* credit: Styling and code for from used from Code Institute Love Running page and adjusted to suit */
 
 .text-input {
     font-family: 'Noto Serif', sans-serif;
@@ -261,12 +265,14 @@ body {
 .social-links {
     text-align: center;
     padding-top: 20px;
+    
 }
 
 .social-area li {
     width: 20%;
     padding: 0;
     margin: 0;
+    
 }
 
 .social-area li a {
@@ -279,6 +285,7 @@ body {
     font-size: 26px;
     font-family: 'Noto Serif', sans-serif;
     text-align: center;
+    
 }
 
 .social-links li a span {
