@@ -189,12 +189,7 @@ body {
     box-shadow: 5px 4px 10px #606160;
 }
 
-#video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-}
+
 
 /* --------------------------------------- Contact */
 
@@ -421,6 +416,13 @@ body {
 
     .gallery-heading h2 {
         text-align: center;
+    }
+
+    #video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
     }
 
 }
