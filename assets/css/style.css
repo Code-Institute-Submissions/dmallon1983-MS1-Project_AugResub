@@ -221,16 +221,19 @@ body {
 .signup-form {
     color: #fff;
     background-color: rgba(60, 60, 60, 0.6);
-    min-width: 50%;
-    
-    
+    min-width: 50%;   
     padding: 30px;
+}
+
+#contact-text-area {
+    max-width: 95%;
 }
 
 .signup-form h3 {
     color: #fafafa;
     margin-bottom: 20px;
 }
+
 
 /* ---------------------------------------Footer */
 
@@ -381,9 +384,9 @@ body {
     .contact-form {
     padding: 20px 5%;
 }
-    .signup-form {
+    /* .signup-form {
         width: 80%;
-    }
+    } */
 }
 
 
@@ -420,7 +423,7 @@ body {
         text-align: center;
     }
 
-    .contact-text {
+    /* .contact-text {
         width: 100%;
-    }
+    } */
 }
