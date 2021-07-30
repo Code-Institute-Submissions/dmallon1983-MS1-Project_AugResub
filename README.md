@@ -6,7 +6,7 @@ This is my submission for MS1 in the Code Institute Full Stack Developer diploma
 
 <h2 align="center"><img src="https://i.imgur.com/8IRxlLW.jpg"></h2>
 <h2 align="center"><img src="https://i.imgur.com/aEItrxf.jpg"></h2>
-<h2 align="center"><img src="https://i.imgur.com/gRE0YeA.jpg"></h2>
+<h2 align="center"><img src="https://i.imgur.com/dmT9uQV.jpg"></h2>
 
 ## User Experience (UX)
 
