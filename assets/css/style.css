@@ -8,6 +8,11 @@
     border: 0;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -37,6 +42,7 @@ header {
     color: #5d0000;
     font-family: Italianno, sans-serif;
     font-size: 100px;
+    padding-top: 20px;
 
 }
 
@@ -209,7 +215,7 @@ body {
 
 .text-input {
     font-family: 'Noto Serif', sans-serif;
-    color: #fafafa;
+    color: #000;
     width: 100%;
     height: 25px;
     position: relative;
@@ -396,6 +402,16 @@ body {
 
 
 @media screen and (max-width: 576px) {
+    
+    .header-area a h1 {
+        /* color: #5d0000; */
+        text-align: center;
+        padding-top: 30px;
+        /* font-family: Italianno, sans-serif; */
+        font-size: 75px;
+    
+    }
+
     .social-area li {
         text-align: center;
     }
