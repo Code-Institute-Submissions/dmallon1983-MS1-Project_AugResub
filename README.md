@@ -155,12 +155,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 3. Footer Social Media links
     - I could not get these to behave in the Grid system as the 4th link would overflow onto the line below. I removed the letter spacing from the text which solved this issue.
 
+4. X-axis Overflow on all pages
+    - There was a horizontal overflow on all pages at first release. Issue corrected by switching the x-overflow to hidden.
+
 
 #### Known Bugs
 
 1. Firefox Desktop and Mobile Browser
     - The font family and weight seem to fall over on Firefox desktop and mobile.
-    - The Social Media links in the footer are moved into a white margin in the footer and overlap each other.
 
 ## Deployment
 
